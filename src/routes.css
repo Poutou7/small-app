@@ -1,0 +1,207 @@
+/***** Error Page *****/
+.error-page {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-page .left-page {
+  flex-basis: 40%;
+  flex-direction: column;
+}
+
+.error-page .left-page div {
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  width: 350px;
+  height: 350px;
+  flex-direction: column;
+}
+
+.error-page .left-page h1 {
+  font-size: 140px;
+  margin: 0;
+  color: #ccc;
+}
+
+.error-page .left-page p,
+.error-page .right-page p:first-of-type {
+  text-transform: uppercase;
+  color: #ccc;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.error-page .right-page {
+  flex: 1;
+  flex-direction: column;
+  padding: 100px;
+}
+
+.error-page .right-page h1 {
+  font-size: 100px;
+  margin: 0;
+  color: #03a9f4;
+}
+
+.error-page .right-page p:first-of-type {
+  color: #333;
+  margin: 20px 0 55px;
+}
+
+.error-page .right-page p:last-of-type {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 18px;
+  color: #999;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+.error-page .right-page a {
+  color: #fff;
+  background-color: #8bc34a;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.error-page .right-page a:hover {
+  background-color: #5b8b23;
+}
+
+
+
+/***** Contact Page *****/
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.contacts .image {
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #aaa;
+  width: 300px;
+  height: 300px;
+}
+
+.contacts .image img {
+  width: 100%;
+}
+
+.contacts .info {
+  flex: 1;
+}
+
+.contacts .info div {
+  display: flex;
+  align-items: center;
+}
+
+.contacts .info div h1 {
+  font-size: 38px;
+  margin-right: 24px;
+}
+
+.contacts .info div button {
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+
+.contacts .info div span {
+  font-size: 30px;
+}
+
+.contacts .info div span.true {
+  color: #ff9800;
+}
+
+.contacts .info div span.false {
+  color: #aaa;
+}
+
+.contacts .info h2 {
+  color: var(--first-color);
+  font-weight: 500;
+  margin: 5px 0 23px;
+  font-size: 24px;
+  transition: 0.4s;
+}
+
+.contacts .info h2 a:visited {
+  color: var(--first-color);
+}
+
+.contacts .info p {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.contacts .info .edit {
+  color: var(--first-color);
+}
+
+.contacts .info .delete {
+  color: #dc4237;
+  margin-left: 10px;
+}
+
+
+/********** Edit Contact Page ***********/
+.title {
+  margin-bottom: 55px;
+  font-size: 40px;
+  color: #0161ad;
+}
+
+#contact-form .name,
+#contact-form label {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 2px #ddd;
+  font-size: 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+#contact-form .name p {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+#contact-form .name {}
+
+#contact-form span {
+  flex-basis: 15%;
+  font-weight: 600;
+}
+
+#contact-form .btns {
+  margin-left: 15%;
+}
+
+#contact-form button.save {
+  color: var(--first-color);
+  margin-right: 7px;
+}
